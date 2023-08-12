@@ -1,27 +1,21 @@
 <template>
   <div id="app">
-    <main-view/>
+    <header-component/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import MainView from "@/views/MainView";
+import HeaderComponent from "@/components/HeaderComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    MainView
+    HeaderComponent,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import "styles/App.css";
 </style>
