@@ -1,0 +1,10 @@
+/* HomeStyles.css */
+
+.headline {
+    font-size: 28px;
+    color: #606060;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+/* Other styles for your Home component */

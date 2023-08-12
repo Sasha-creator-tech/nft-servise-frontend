@@ -1,0 +1,59 @@
+/* ListStyles.css */
+
+.list {
+    background-color: #333;
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 1200px; /* Adjust the maximum width */
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #555;
+}
+
+.list-field {
+    flex: 1;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.list-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.list-button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.copy-button {
+    background-color: #444;
+    color: #fff;
+}
+
+.view-button {
+    background-color: #4daf4a;
+    color: #fff;
+}
+
+.explore-link {
+    color: #4daf4a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.explore-link i {
+    margin-left: 5px;
+}
