@@ -57,3 +57,13 @@
     color: #4daf4a; /* Green color for "App" */
 }
 
+.profile-button {
+    background-color: #444; /* Soft grey color */
+    border-radius: 20px; /* Rounded edges */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none; /* Remove border */
+    cursor: pointer;
+    /* Add any other styles you want */
+}
