@@ -40,6 +40,7 @@ export default {
                 const result = await this.$root.core.requestSignature(signer);
                 if (result) {
                     try {
+                        console.log(result);
                         const token = await this.login(result);
                         if (token) {
                             localStorage.setItem(
