@@ -1,0 +1,30 @@
+.headline {
+    font-size: 28px;
+    color: #606060;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.profile {
+    margin: 16px; /* Add margin to create space around the container */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    padding: 100px; /* Add padding to create space around the content */
+}
+
+.address {
+    margin-bottom: 20px;
+}
+
+.balances {
+    margin-top: 20px;
+}
+
+.balance {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.collection-name {
+    font-weight: bold;
+}
