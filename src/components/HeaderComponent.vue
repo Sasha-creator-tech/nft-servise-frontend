@@ -40,7 +40,10 @@ export default {
                 const result = await this.$root.core.requestSignature(signer);
                 if (result) {
                     try {
-                        console.log(result);
+                        localStorage.setItem(
+                            "user_address",
+                            result.address.toLowerCase(),
+                        );
                         const token = await this.login(result);
                         if (token) {
                             localStorage.setItem(

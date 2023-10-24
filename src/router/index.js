@@ -29,6 +29,11 @@ const routes = [
         name: "profile",
         component: () => import("../views/ProfileView.vue"),
     },
+    {
+        path: "/token/:id",
+        name: "token",
+        component: () => import("../views/TokenView.vue")
+    }
 ];
 
 const router = new VueRouter({
