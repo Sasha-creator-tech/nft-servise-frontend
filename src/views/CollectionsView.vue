@@ -1,13 +1,13 @@
 <template>
     <div>
         <h2 class="headline">Collections</h2>
-        <div class="home">
+        <router-link class="home" v-for="collection in getCollections"
+                     :to="'/token/' + collection.address"
+                     :key="collection.title">
             <nft-token-component
-                v-for="collection in getCollections"
-                :key="collection.title"
                 :collection="collection"
             />
-        </div>
+        </router-link>
     </div>
 </template>
 

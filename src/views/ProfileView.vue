@@ -4,20 +4,19 @@
 
         <div class="address">
             <p>Your Ethereum Address:</p>
-            <p>{{ address }}</p>
+            <p>{{ formatAddress(address) }}</p>
         </div>
 
+      <h2>Your Token Balances</h2>
         <div class="balances">
-            {{ getBalances }}
-            <h2>Your Token Balances</h2>
             <div
                 v-for="balance in getBalances"
                 :key="balance.nftId.title"
                 class="balance"
             >
-                <div class="collection-name">{{ balance.nftId.title }}</div>
-                <div class="brand">{{ balance.nftId.brand.title }}</div>
-                <div class="amount">{{ balance.balance }}</div>
+                <div>Collection Name:</div><div class="collection-name">{{ balance.nftId.nftToken.title }}</div>
+                <div>Brand: </div><div class="brand">{{ balance.nftId.nftToken.brand.name }}</div>
+                <div>Amount: </div><div class="amount">{{ balance.balance }}</div>
             </div>
         </div>
     </div>
@@ -25,6 +24,7 @@
 
 <script>
 import { mapActions, mapGetters } from "vuex";
+import {formatEthAddress} from "@/formatters/formatters";
 
 export default {
     name: "ProfileView",
@@ -35,11 +35,17 @@ export default {
     },
     methods: {
         ...mapActions(["fetchBalance"]),
+      formatAddress(address) {
+        if (!address) {
+          return;
+        }
+        return formatEthAddress(address)
+      }
     },
     computed: {
         ...mapGetters(["getBalances"]),
     },
-    created() {
+    mounted() {
         const userAddress = localStorage.getItem("user_address");
         if (!userAddress) {
             return;
