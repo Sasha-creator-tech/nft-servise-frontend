@@ -33,6 +33,11 @@ const routes = [
         path: "/token/:address",
         name: "token",
         component: () => import("../views/TokenView.vue")
+    },
+    {
+        path: "/brands",
+        name: "brands",
+        component: () => import("../views/BrandView.vue")
     }
 ];
 
