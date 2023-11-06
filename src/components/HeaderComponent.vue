@@ -35,7 +35,7 @@ export default {
     methods: {
         ...mapActions(["login"]),
         async connectAndSign() {
-            const signer = await this.$root.core.connectWallet();
+            const signer = await this.$root.core.getSigner();
             if (signer) {
                 const result = await this.$root.core.requestSignature(signer);
                 if (result) {
@@ -92,9 +92,14 @@ export default {
         goToProfile() {
             this.$router.push("/profile"); // Navigate to the "Profile" page
         },
+        async initContract() {
+          const signer = await this.$root.core.getSigner();
+          await this.$root.core.setMainContract(signer);
+        }
     },
-    created() {
+    async created() {
         this.$root.core = new Core();
+        await this.initContract();
         // TODO: make sure it works correct
         const isTimestampFresh = this.isTimestampOlderThanOneDay(
             JSON.parse(localStorage.getItem("auth_token"))?.time_creation,
