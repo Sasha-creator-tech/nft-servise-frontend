@@ -1,0 +1,15 @@
+/* HomeStyles.css */
+
+.headline {
+    font-size: 28px;
+    color: #606060;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.home {
+    margin: 16px; /* Add margin to create space around the container */
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    padding: 10px; /* Add padding to create space around the tiles */
+}
+/* Other styles for your Home component */

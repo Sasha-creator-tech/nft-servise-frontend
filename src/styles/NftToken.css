@@ -1,0 +1,43 @@
+/* collection-tile-styles.css */
+
+/* Container for Collection Tiles */
+.collection-container {
+    margin: 20px; /* Add margin to create space around the container */
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    padding: 20px; /* Add padding to create space around the tiles */
+}
+
+/* Collection Tile Container */
+.collection-tile {
+    border: 1px solid #333; /* Dark gray border */
+    border-radius: 8px;
+    background-color: #222; /* Dark gray background */
+    color: #fff; /* White text color */
+    padding: 16px;
+    text-align: center;
+    margin: 20px; /* Increase the margin to create more space between tiles and edges */
+    width: calc(25% - 40px); /* Ensure 4 tiles per row with the larger margin */
+    box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+    display: inline-block; /* Display tiles in a row */
+    vertical-align: top; /* Align tiles at the top of the row */
+}
+
+/* Collection Title */
+.collection-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* Collection Description */
+.collection-description {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+/* Hover Effect */
+.collection-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}

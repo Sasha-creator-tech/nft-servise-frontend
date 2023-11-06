@@ -1,0 +1,61 @@
+/* TokenStyles.css */
+
+.token {
+    padding: 30px 20px; /* Add more padding to the top (30px) and maintain 20px for the other sides */
+    background-color: #2b2b2b;
+    color: white;
+}
+
+.title {
+    font-size: 28px;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.contract-address a {
+    color: #4daf4a; /* Link color */
+}
+
+.buy-button {
+    background-color: #4daf4a; /* Buy button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.token-plate {
+    padding: 30px 20px;
+    background-color: #2b2b2b;
+    color: white;
+    margin: 10px; /* Add margin to create separation between plates */
+    border-radius: 5px; /* Add rounded corners to create a plate-like appearance */
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-button {
+    background-color: #4daf4a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px; /* Add some spacing between buttons */
+}
+
+.quantity-input {
+    border: 1px solid #2b2b2b; /* Add a border for the input */
+    padding: 5px;
+    border-radius: 5px;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+

@@ -1,0 +1,69 @@
+/* HeaderStyles.css */
+
+.header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.header-nav {
+    display: flex;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+.header-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-link:hover {
+    color: #4daf4a;
+}
+
+.login-button {
+    background-color: #63c967; /* Soft green color */
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #4daf4a; /* Darker green color on hover */
+}
+
+.header-title-white {
+    color: #fff; /* White color for "My Awesome" */
+}
+
+.header-title-green {
+    color: #4daf4a; /* Green color for "App" */
+}
+
+.profile-button {
+    background-color: #444; /* Soft grey color */
+    border-radius: 20px; /* Rounded edges */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    border: none; /* Remove border */
+    cursor: pointer;
+    /* Add any other styles you want */
+}
