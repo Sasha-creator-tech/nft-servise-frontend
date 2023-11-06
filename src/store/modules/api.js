@@ -5,12 +5,14 @@ const api = {
     state: {
         collections: [],
         balances: [],
-        nftToken: null
+        nftToken: null,
+        brands: []
     },
     getters: {
         getCollections: (state) => state.collections,
         getBalances: (state) => state.balances,
-        getNftTokenData: (state) => state.nftToken
+        getNftTokenData: (state) => state.nftToken,
+        getBrands: (state) => state.brands
     },
     mutations: {
         setCollection(state, collections) {
@@ -21,6 +23,9 @@ const api = {
         },
         setNftTokenData(state, nftTokenData) {
             state.nftToken = nftTokenData;
+        },
+        setBrands(state, brands) {
+            state.brands = brands;
         }
     },
     actions: {
@@ -78,6 +83,17 @@ const api = {
                 const nftTokenData = await axios.get(`${config.BASE_API}/nfttoken/${address}`);
                 commit("setNftTokenData", nftTokenData.data);
                 return nftTokenData.data;
+            } catch (err) {
+                console.log(err);
+            }
+        },
+
+        // eslint-disable-next-line
+        async fetchBrands({ commit }) {
+            try {
+                const brands = await axios.get(`${config.BASE_API}/brand`);
+                commit("setBrands", brands.data);
+                return brands.data;
             } catch (err) {
                 console.log(err);
             }

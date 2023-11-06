@@ -1,0 +1,54 @@
+/* Page container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+.section {
+    margin: 20px 0;
+}
+
+/* Token info */
+.token-info {
+    border: 1px solid #444; /* Dark border */
+    padding: 20px;
+    background-color: #333; /* Dark section background */
+}
+
+.token-info h2 {
+    font-size: 24px;
+}
+
+/* Collection creation */
+.collection-creation {
+    border: 1px solid #444;
+    padding: 20px;
+    background-color: #333;
+}
+
+.collection-creation h2 {
+    font-size: 24px;
+}
+
+.why-choose-us {
+    border: 1px solid #444;
+    padding: 20px;
+    background-color: #333;
+}
+
+.why-choose-us h2 {
+    font-size: 24px;
+}
+
+.why-choose-us ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.why-choose-us li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
