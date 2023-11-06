@@ -30,7 +30,7 @@ const routes = [
         component: () => import("../views/ProfileView.vue"),
     },
     {
-        path: "/token/:id",
+        path: "/token/:address",
         name: "token",
         component: () => import("../views/TokenView.vue")
     }

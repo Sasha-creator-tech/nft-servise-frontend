@@ -9,7 +9,7 @@
 
 .home {
     margin: 16px; /* Add margin to create space around the container */
-    max-width: 1200px; /* Adjust the maximum width as needed */
-    padding: 100px; /* Add padding to create space around the tiles */
+    max-width: 1000px; /* Adjust the maximum width as needed */
+    padding: 10px; /* Add padding to create space around the tiles */
 }
 /* Other styles for your Home component */
